@@ -19,6 +19,7 @@ import (
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/btg"
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/cpuchain"
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/dash"
+	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/blocx"
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/dcr"
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/deeponion"
 	"github.com/NikunjVaghasiya01/blockbook/bchain/coins/digibyte"
@@ -86,6 +87,7 @@ func init() {
 	BlockChainFactories["Bcash Testnet"] = bch.NewBCashRPC
 	BlockChainFactories["Bgold"] = btg.NewBGoldRPC
 	BlockChainFactories["Bgold Testnet"] = btg.NewBGoldRPC
+	BlockChainFactories["Blocx"] = blocx.NewBlocxRPC
 	BlockChainFactories["Dash"] = dash.NewDashRPC
 	BlockChainFactories["Dash Testnet"] = dash.NewDashRPC
 	BlockChainFactories["Decred"] = dcr.NewDecredRPC
